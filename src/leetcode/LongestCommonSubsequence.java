@@ -3,8 +3,8 @@ class Solution {
         if (text1 == null || text2 == null || text1.length() == 0 || text2.length() == 0) {
             return 0;
         }
-        char[] source = text1.length() > text2.length() ? text1.toCharArray() : text2.toCharArray();
-        char[] target = text1.length() > text2.length() ? text2.toCharArray() : text1.toCharArray();
+        char[] source = text1.toCharArray();
+        char[] target = text2.toCharArray();
 
         int[][] dp = new int[source.length+1][target.length+1];
 
